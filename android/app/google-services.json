@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "462932257595",
+    "project_id": "hospynav-b6fae",
+    "storage_bucket": "hospynav-b6fae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462932257595:android:7ac9b05e513817ebafe51e",
+        "android_client_info": {
+          "package_name": "com.hospi.hospynav"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462932257595-1egm9blabanio3602hn8ueopqrp90lvv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hospi.hospynav",
+            "certificate_hash": "57eee4a9983fb53e76d6ffc6ee64e563dbe1e2e7"
+          }
+        },
+        {
+          "client_id": "462932257595-qa4itaneurbb6ljrkov6gvl7qvbivefp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hospi.hospynav",
+            "certificate_hash": "e29c72cfa894290ae9bcde9e20b591586c396a2c"
+          }
+        },
+        {
+          "client_id": "462932257595-n9n3g2lj8j15vv889b5gslhundnnhmd5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvt3MVgES4M8GRXsVZHSckNBYHVp2wLN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462932257595-n9n3g2lj8j15vv889b5gslhundnnhmd5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "462932257595-0pbur5jsn8dlq4adempgljtalgqat92k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hospyNav"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
