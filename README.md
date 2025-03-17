@@ -16,7 +16,7 @@ DOWNLOAD APK: https://www.mediafire.com/file/zq6a18dyu1hm08p/HospyNav.apk/file
 ## Tech Stack
 - **Frontend**: Flutter (Dart)
 - **Database/backend**: Firestore
-- **Authentication**: Firebase Authentication (Google, Facebook, Email, Phone Number)
+- **Authentication**: Firebase Authentication (Google, Email, Phone Number)
 - **Maps & Navigation**: OpenRoute API & RapidAPI Google Maps
 
 ## Installation Guide
