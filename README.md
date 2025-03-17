@@ -98,5 +98,5 @@ lib/
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-For any inquiries or support, please reach out via email: `oemmanuelodiwuor@example.com`
+For any inquiries or support, please reach out via email: `oemmanuelodiwuor@gmail.com`
 
