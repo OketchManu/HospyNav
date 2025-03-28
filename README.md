@@ -3,8 +3,7 @@
 ## Overview
 HospyNav is a mobile application designed to provide accessible and reliable information about hospital locations, services, and navigation assistance. The app integrates real-time mapping, hospital details, emergency contact information, and first aid videos to enhance the healthcare-seeking experience for users.
 
-DOWNLOAD APK: https://www.mediafire.com/file/zq6a18dyu1hm08p/HospyNav.apk/file
-
+DOWNLOAD APK: https://www.mediafire.com/file/9yk6n8syqp9p5mb/HospyNav.apk/file
 ## Features
 - **User Authentication**: Sign up and log in using Facebook, Google, email, or phone number (with password for phone login).
 - **Hospital Search & Details**: View hospital information, including name, location, available services, and contact details.
