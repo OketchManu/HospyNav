@@ -55,7 +55,7 @@ Ensure the following tools are installed:
 
 ```bash
 # Step 1: Clone the repository
-git clone https://github.com/yourusername/hospynav.git
+git clone https://github.com/OketchManu/HospyNav.git
 cd hospynav
 
 # Step 2: Install dependencies
