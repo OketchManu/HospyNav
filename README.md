@@ -1,101 +1,64 @@
-# HospyNav - Hospital Navigation and Healthcare services finder App
+# 🏥 **HospyNav**  
+*A Hospital Navigation & Healthcare Services Finder App*
 
-## Overview
-HospyNav is a mobile application designed to provide accessible and reliable information about hospital locations, services, and navigation assistance. The app integrates real-time mapping, hospital details, emergency contact information, and first aid videos to enhance the healthcare-seeking experience for users.
+![HospyNav Banner](https://via.placeholder.com/900x200?text=HospyNav+-+Find+Hospitals+Faster)
 
-DOWNLOAD APK: https://www.mediafire.com/file/9yk6n8syqp9p5mb/HospyNav.apk/file
-## Features
-- **User Authentication**: Sign up and log in using Facebook, Google, email, or phone number (with password for phone login).
-- **Hospital Search & Details**: View hospital information, including name, location, available services, and contact details.
-- **Navigation Assistance**: Get directions to the nearest or selected hospital using OpenRoute API and RapidAPI Google Maps.
-- **Emergency Contacts**: Quick access to emergency numbers and contacts.
-- **First Aid Videos**: Educational videos on basic first aid practices.
-- **User Feedback**: Submit reviews and feedback about hospitals.
+---
 
-## Tech Stack
-- **Frontend**: Flutter (Dart)
-- **Database/backend**: Firestore
-- **Authentication**: Firebase Authentication (Google, Email, Phone Number)
-- **Maps & Navigation**: OpenRoute API & RapidAPI Google Maps
+## 📱 Overview
+**HospyNav** is a powerful and intuitive mobile application that helps users easily find hospitals, view available healthcare services, access real-time navigation, and get emergency support — all in one place. Whether you're looking for the nearest hospital or essential first aid guidance, HospyNav is your go-to healthcare companion.
 
-## Installation Guide
-### Prerequisites
-Ensure you have the following installed on your system:
+👉 **[Download APK](https://www.mediafire.com/file/eebpcx3fefenmyn/HospyNav-V1.0.apk/file)**
+
+---
+
+## ✨ Features
+- 🔐 **User Authentication**  
+  Sign up or log in using **Facebook**, **Google**, **Email**, or **Phone Number** (with password).
+  
+- 🏥 **Hospital Search & Details**  
+  Find hospitals with name, location, services offered, and contact details.
+  
+- 🗺️ **Navigation Assistance**  
+  Get directions using **OpenRoute API** and **Google Maps (via RapidAPI)**.
+  
+- 📞 **Emergency Contacts**  
+  Access crucial emergency numbers instantly.
+  
+- 🎥 **First Aid Videos**  
+  Watch educational videos on essential first aid techniques.
+  
+- 💬 **User Feedback**  
+  Submit reviews and feedback to improve healthcare services.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer           | Technology                     |
+|----------------|----------------------------------|
+| Frontend        | Flutter (Dart)                  |
+| Backend/Database| Firebase Firestore              |
+| Authentication  | Firebase Authentication         |
+| Maps/Navigation | OpenRoute API, RapidAPI (Google Maps) |
+
+---
+
+## ⚙️ Installation Guide
+
+### ✅ Prerequisites
+Ensure the following tools are installed:
 - Flutter SDK (`C:/dev/flutter`)
 - Dart
 - Firebase CLI
-- Android Studio / Visual Studio Code (for development)
+- Android Studio or VS Code
 
-### Steps to Run the Project
-1. **Clone the Repository**:
-   ```sh
-   git clone https://github.com/yourusername/hospynav.git
-   cd hospynav
-   ```
+### 🚀 Run the App Locally
 
-2. **Install Dependencies**:
-   ```sh
-   flutter pub get
-   ```
+```bash
+# Step 1: Clone the repository
+git clone https://github.com/yourusername/hospynav.git
+cd hospynav
 
-3. **Set Up Firebase**:
-   - Add `google-services.json` (Android) and `GoogleService-Info.plist` (iOS) in respective directories.
-   - Enable authentication methods in Firebase Console.
-
-4. **Configure API Keys**:
-   - Set up OpenRoute API key in `maps_service.dart`.
-   - Register and obtain a Google Maps API key via RapidAPI, then configure it in `maps_service.dart`.
-
-5. **Run the Application**:
-   ```sh
-   flutter run
-   ```
-
-## Folder Structure
-```
-lib/
-│── auth/
-│   ├── screens/            # Login and Register pages
-│   ├── auth_service.dart   # Authentication logic
-│── screens/
-│   ├── home_screen.dart    # Home page UI
-│   ├── hospital_finder_screen.dart  # List of hospitals
-│   ├── navigation.dart     # Maps & navigation page
-│   ├── first_aid_videos.dart      # First aid videos section
-│   ├── feedback_screen.dart
-│   ├── settings_screen.dart
-│   ├── login_screen.dart
-│   ├── register_screen.dart
-│   ├── forgot_password_screen.dart
-│   ├── emergency_contacts_screen.dart
-│   ├── notifications_screen.dart
-│   ├── help_screen.dart
-│── services/
-│   ├── authentication_wrapper.dart
-│   ├── auth.dart 
-│── main.dart                 # App entry point
-```
-
-## API Integration
-- **Hospital Data**: Fetches hospital details from the Kenya Ministry of Health Facility Registry.
-- **OpenRoute API**: Provides route calculation and navigation assistance.
-- **RapidAPI Google Maps**: Enables real-time mapping and hospital location services.
-
-## Troubleshooting
-- If you encounter issues with OpenRoute API, verify the API key in `maps_service.dart`.
-- For Google Maps errors, ensure your API key is correctly configured in RapidAPI and Firebase Console.
-- Authentication issues? Double-check Firebase configurations and credentials.
-
-## Contribution
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-branch`
-3. Commit changes: `git commit -m "Add new feature"`
-4. Push to the branch: `git push origin feature-branch`
-5. Submit a pull request.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-For any inquiries or support, please reach out via email: `oemmanuelodiwuor@gmail.com`
-
+# Step 2: Install dependencies
+flutter pub get
