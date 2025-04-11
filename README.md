@@ -1,8 +1,6 @@
 # 🏥 **HospyNav**  
 *A Hospital Navigation & Healthcare Services Finder App*
 
-![HospyNav Banner](https://via.placeholder.com/900x200?text=HospyNav+-+Find+Hospitals+Faster)
-
 ---
 
 ## 📱 Overview
