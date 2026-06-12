@@ -16,15 +16,21 @@ import 'package:hospy_nav/screens/notifications_screen.dart';
 import 'package:hospy_nav/screens/first_aid_videos_screen.dart';
 import 'package:hospy_nav/screens/hospital_finder_screen.dart';
 import 'package:hospy_nav/services/authentication_wrapper.dart';
-import 'package:shared_preferences/shared_preferences.dart'; // Add this import
+import 'package:shared_preferences/shared_preferences.dart';
 
 final _logger = Logger('HospyNav');
 
 Future<void> initializeApp() async {
   try {
     WidgetsFlutterBinding.ensureInitialized();
-    await dotenv.load(fileName: ".env");
-    _logger.info('Environment variables loaded from .env');
+    try {
+      await dotenv.load(fileName: '.env');
+      _logger.info('Environment variables loaded from .env');
+    } catch (e) {
+      _logger.warning(
+        'Could not load .env file. Copy .env.example to .env and add your API keys.',
+      );
+    }
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
@@ -57,12 +63,12 @@ class HospyNavApp extends StatefulWidget {
   HospyNavAppState createState() => HospyNavAppState();
 
   static void setLocale(BuildContext context, Locale newLocale) {
-    HospyNavAppState? state = context.findAncestorStateOfType<HospyNavAppState>();
+    final state = context.findAncestorStateOfType<HospyNavAppState>();
     state?.setLocale(newLocale);
   }
 
   static void setThemeMode(BuildContext context, bool isDarkMode) {
-    HospyNavAppState? state = context.findAncestorStateOfType<HospyNavAppState>();
+    final state = context.findAncestorStateOfType<HospyNavAppState>();
     state?.setThemeMode(isDarkMode);
   }
 }
@@ -143,7 +149,7 @@ class HospyNavAppState extends State<HospyNavApp> {
         Locale('kik', 'KE'),
       ],
       localeResolutionCallback: (locale, supportedLocales) {
-        for (var supportedLocale in supportedLocales) {
+        for (final supportedLocale in supportedLocales) {
           if (supportedLocale.languageCode == locale?.languageCode &&
               supportedLocale.countryCode == locale?.countryCode) {
             return supportedLocale;
@@ -183,9 +189,16 @@ class ErrorApp extends StatelessWidget {
             children: [
               const Icon(Icons.error_outline, color: Colors.red, size: 60),
               const SizedBox(height: 16),
-              const Text('An error occurred during initialization', style: TextStyle(fontSize: 16)),
+              const Text(
+                'An error occurred during initialization',
+                style: TextStyle(fontSize: 16),
+              ),
               if (!const bool.fromEnvironment('dart.vm.product'))
-                Text(error, style: const TextStyle(fontSize: 12), textAlign: TextAlign.center),
+                Text(
+                  error,
+                  style: const TextStyle(fontSize: 12),
+                  textAlign: TextAlign.center,
+                ),
               const SizedBox(height: 16),
               ElevatedButton(
                 onPressed: () => main(),

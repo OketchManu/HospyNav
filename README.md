@@ -60,3 +60,35 @@ cd hospynav
 
 # Step 2: Install dependencies
 flutter pub get
+
+---
+
+## Environment setup (required for maps & hospital search)
+
+1. Copy `.env.example` to `.env`
+2. Add your API keys (News API, RapidAPI, OpenRouteService)
+3. `GOOGLE_MAPS_API_KEY` is pre-filled from the Firebase Android config
+
+```bash
+copy .env.example .env
+flutter pub get
+flutter run
+```
+
+## Build & publish APK (download link)
+
+```bash
+flutter build apk --release
+```
+
+APK output: `build/app/outputs/flutter-apk/app-release.apk`
+
+**Option A — GitHub Release (recommended):**
+
+```bash
+gh release create v1.0.1 build/app/outputs/flutter-apk/app-release.apk --title "HospyNav v1.0.1" --notes "Firebase fix and reliable startup"
+```
+
+Then put the release URL in the README download link.
+
+**Option B — MediaFire:** Upload `app-release.apk` and replace the MediaFire link in README.
